@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyPopLibs</string>
+    <string name="text_view_first_text">Счетчик №1</string>
+    <string name="text_view_second_text">Счетчик №2</string>
+    <string name="text_view_third_text">Счетчик №3</string>
+    <string name="btn_counter_init_text">0</string>
 </resources>

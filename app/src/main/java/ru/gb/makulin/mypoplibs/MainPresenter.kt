@@ -10,15 +10,15 @@ class MainPresenter(
         when (id) {
             Button.FIRST.id -> {
                 val nextValue = model.increment(0)
-                view.setButtonText(0, nextValue.toString())
+                view.setFirstButtonText(nextValue.toString())
             }
             Button.SECOND.id -> {
                 val nextValue = model.increment(1)
-                view.setButtonText(1, nextValue.toString())
+                view.setSecondButtonText(nextValue.toString())
             }
             Button.THIRD.id -> {
                 val nextValue = model.increment(2)
-                view.setButtonText(2, nextValue.toString())
+                view.setThirdButtonText(nextValue.toString())
             }
             Button.ERR.id -> error("wrong view")
         }

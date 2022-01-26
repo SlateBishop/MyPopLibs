@@ -41,14 +41,15 @@ class MainActivity : AppCompatActivity(), MainView {
         }
     }
 
-    //todo
-    override fun setButtonText(index: Int, text: String) {
-        when (index) {
-            0 -> binding.btnCounterFirst.text = text
-            1 -> binding.btnCounterSecond.text = text
-            2 -> binding.btnCounterThird.text = text
-            else -> error("Неверный индекс")
-        }
+    override fun setFirstButtonText(text: String) {
+        binding.btnCounterFirst.text = text
     }
 
+    override fun setSecondButtonText(text: String) {
+        binding.btnCounterSecond.text = text
+    }
+
+    override fun setThirdButtonText(text: String) {
+        binding.btnCounterThird.text = text
+    }
 }
